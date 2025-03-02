@@ -40,3 +40,41 @@ Install dependencies with the following command:
 4. pip install -r requirements.txt -f https://download.pytorch.org/whl/cu121/torch_stable.html
 
 This command will install all the libraries required to run the project, including PyTorch with CUDA support.
+
+------------------------------------------------------------------------------------------------------------------
+
+# Changing the Background Color
+
+In this project, the default background color is set to green (RGBA) for video processing. To change the background color, you can do the following:
+
+1. **Default - Green Color**: The green color is set as `(0, 255, 0, 255)`. This means the background will be green with full opacity.
+
+2. **Setting a Transparent Background**: To use a transparent background, change the `background_color` variable to `(0, 0, 0, 0)`. This will create a fully transparent background. You need to ensure that you have a color alpha channel to work with transparency in the image.
+
+   ```python
+   background_color = (0, 0, 0, 0)  # Transparent background (RGBA)
+Copy
+Using a Custom Image as Background: If you want to replace the background with an image, simply specify the path to your image in the background_image_path variable. If the file exists, it will be loaded and used as the background.
+
+background_image_path = 'path/to/your/background_image.jpg'  # Path to the background image
+Copy
+Example of Modifying Variables in the Code
+# Default green background
+background_color = (0, 255, 0, 255)  # Green background color
+
+# For a transparent background
+# background_color = (0, 0, 0, 0)  # Transparent background
+
+# For a custom background image
+# background_image_path = 'image.jpg'  # Path to the background image
+Copy
+How This Looks in the Code
+You can also add comments in the code to make it clearer:
+
+# Setting the default background (green)
+background_color = (0, 255, 0, 255)  # Green background color (RGBA)
+# To use a transparent background, replace with:
+# background_color = (0, 0, 0, 0)  # Transparent background (RGBA)
+
+# Path to the background image
+background_image_path = 'image.jpg'  # Replace with the path to your image
