@@ -16,3 +16,27 @@ After the video is processed, the original audio from the input video is added b
 
 Multithreading:
 Videos are processed concurrently using ThreadPoolExecutor for efficient handling of multiple videos.
+
+# Installation
+
+To install the project dependencies, follow these steps:
+
+1. Make sure you have Python version 3.10 installed. The project has only been tested on this version.
+2. Create and activate a virtual environment:
+ 
+ ```bash
+   python -m venv venv
+   # Для Windows:
+   .\venv\Scripts\activate
+   # Для macOS/Linux:
+   source venv/bin/activate
+   
+3. Update pip to the latest version:
+
+4. python -m pip install --upgrade pip
+
+Install dependencies with the following command:  
+
+5. pip install -r requirements.txt -f https://download.pytorch.org/whl/cu121/torch_stable.html
+
+This command will install all the libraries required to run the project, including PyTorch with CUDA support.
