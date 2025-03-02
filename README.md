@@ -31,12 +31,12 @@ To install the project dependencies, follow these steps:
    # Для macOS/Linux:
    source venv/bin/activate
    
-3. Update pip to the latest version:
+Update pip to the latest version:
 
-4. python -m pip install --upgrade pip
+3. python -m pip install --upgrade pip
 
 Install dependencies with the following command:  
 
-5. pip install -r requirements.txt -f https://download.pytorch.org/whl/cu121/torch_stable.html
+4. pip install -r requirements.txt -f https://download.pytorch.org/whl/cu121/torch_stable.html
 
 This command will install all the libraries required to run the project, including PyTorch with CUDA support.
